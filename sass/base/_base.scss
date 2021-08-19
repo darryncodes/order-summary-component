@@ -1,0 +1,48 @@
+//PRIMARY
+
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+//NEUTRAL
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+$black: #000;
+$black-2: rgba(0, 0, 0, 0.5);
+
+//RESPONSIVE BREAKPOINTS
+
+$bp-desktop: 90em; //1440px
+$bp-tablet: 56.25em; //900px
+$bp-mobile: 40.625em; //650px
+
+//RESETS & RESPONSIVE FONT SIZES
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-tablet) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
