@@ -68,12 +68,18 @@
 
         &:hover {
             text-decoration: none;
+            color: $purple;
         }
     }
 
     &__icon {
+        padding-top: 0.7rem;
         width: 6rem;
         height: 6rem;
+
+        @media only screen and (max-width: $bp-tablet) {
+            padding-top: 0;
+        }
     }
 
     &__plan {
@@ -96,8 +102,13 @@
         box-shadow: 0px 10px 20px 0px rgba(56, 41, 224, 0.3);
 
         &:active {
-            transform: scale(0.995);
+            transform: scale(0.99);
             box-shadow: 0px 10px 20px 0px $white;
+        }
+
+        &:hover {
+            background-color: $purple;
+            transition: ease-in 0.3s;
         }
     }
     &--cancel {
@@ -107,7 +118,7 @@
         align-self: center;
 
         &:hover {
-            color: $bright-blue;
+            color: $purple;
         }
     }
 }

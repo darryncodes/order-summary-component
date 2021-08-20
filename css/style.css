@@ -189,11 +189,19 @@ button + button {
 
 .card__price a:hover {
   text-decoration: none;
+  color: #6b4bff;
 }
 
 .card__icon {
+  padding-top: 0.7rem;
   width: 6rem;
   height: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card__icon {
+    padding-top: 0;
+  }
 }
 
 .card__plan {
@@ -218,10 +226,16 @@ button + button {
 }
 
 .btn--payment:active {
-  -webkit-transform: scale(0.995);
-          transform: scale(0.995);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
   -webkit-box-shadow: 0px 10px 20px 0px #fff;
           box-shadow: 0px 10px 20px 0px #fff;
+}
+
+.btn--payment:hover {
+  background-color: #6b4bff;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 .btn--cancel {
@@ -234,5 +248,5 @@ button + button {
 }
 
 .btn--cancel:hover {
-  color: #3829e0;
+  color: #6b4bff;
 }
