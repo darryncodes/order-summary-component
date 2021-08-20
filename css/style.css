@@ -29,4 +29,210 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
+  color: #7280a7;
+  padding: 1rem;
+  background: url(../img/pattern-background-desktop.svg), #e0e8ff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeIn 2.5s ease-in;
+          animation: fadeIn 2.5s ease-in;
+}
+
+@media only screen and (max-width: 40.625em) {
+  body {
+    background: none, #e0e8ff;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #1f2f56;
+  margin: 2rem 0;
+}
+
+button + button {
+  margin-top: 2rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7280a7;
+  margin: 5rem 0;
+}
+
+.attribution__link {
+  color: #1f2f56;
+}
+
+.attribution__link:hover {
+  text-decoration: none;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21rem;
+  width: 45rem;
+  background-image: url(../img/illustration-hero.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .card::before {
+    height: 23rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card::before {
+    height: 24rem;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 45rem;
+  height: 67rem;
+  background-color: #fff;
+  padding: 5rem 4rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 0px 10px 20px -10px rgba(48, 35, 192, 0.3), 0px 10px 20px -5px rgba(48, 35, 192, 0.1);
+          box-shadow: 0px 10px 20px -10px rgba(48, 35, 192, 0.3), 0px 10px 20px -5px rgba(48, 35, 192, 0.1);
+}
+
+@media only screen and (max-width: 40.625em) {
+  .card {
+    height: 64rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card {
+    max-width: 38rem;
+    height: 67rem;
+  }
+}
+
+.card__price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7rem 10rem 1fr;
+      grid-template-columns: 7rem 10rem 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 0;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: #f5f7ff;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .card__price {
+    margin: 3rem 0;
+  }
+}
+
+.card__price a {
+  color: #3829e0;
+}
+
+.card__price a:hover {
+  text-decoration: none;
+}
+
+.card__icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.card__plan {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.btn--payment {
+  background-color: #3829e0;
+  padding: 2rem 2rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(56, 41, 224, 0.3);
+          box-shadow: 0px 10px 20px 0px rgba(56, 41, 224, 0.3);
+}
+
+.btn--payment:active {
+  -webkit-transform: scale(0.995);
+          transform: scale(0.995);
+  -webkit-box-shadow: 0px 10px 20px 0px #fff;
+          box-shadow: 0px 10px 20px 0px #fff;
+}
+
+.btn--cancel {
+  background-color: transparent;
+  color: inherit;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.btn--cancel:hover {
+  color: #3829e0;
 }

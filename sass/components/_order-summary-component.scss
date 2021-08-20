@@ -1,0 +1,113 @@
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21rem;
+    width: 45rem;
+    background-image: url(../img/illustration-hero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-mobile) {
+        height: 23rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+        height: 24rem;
+    }
+}
+
+.card {
+    position: relative;
+    max-width: 45rem;
+    height: 67rem;
+    background-color: $white;
+    padding: 5rem 4rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    box-shadow: 0px 10px 20px -10px rgba(48, 35, 192, 0.3),
+        0px 10px 20px -5px rgba(48, 35, 192, 0.1);
+
+    @media only screen and (max-width: $bp-mobile) {
+        height: 64rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+        max-width: 38rem;
+        height: 67rem;
+    }
+
+    &__price {
+        display: grid;
+        grid-template-columns: 7rem 10rem 1fr;
+
+        justify-items: center;
+        align-items: center;
+
+        margin: 4rem 0;
+        padding: 1rem;
+
+        border-radius: 1.5rem;
+
+        background-color: $very-pale-blue;
+
+        @media only screen and (max-width: $bp-mobile) {
+            margin: 3rem 0;
+        }
+    }
+
+    &__price a {
+        color: $bright-blue;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    &__plan {
+        color: $dark-blue;
+        font-weight: 700;
+    }
+}
+
+.btn {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+
+    &--payment {
+        background-color: $bright-blue;
+        padding: 2rem 2rem;
+        border-radius: 1.5rem;
+        color: $white;
+        box-shadow: 0px 10px 20px 0px rgba(56, 41, 224, 0.3);
+
+        &:active {
+            transform: scale(0.995);
+            box-shadow: 0px 10px 20px 0px $white;
+        }
+    }
+    &--cancel {
+        background-color: transparent;
+        color: inherit;
+        width: 50%;
+        align-self: center;
+
+        &:hover {
+            color: $bright-blue;
+        }
+    }
+}
