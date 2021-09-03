@@ -1,3 +1,5 @@
+@use '../base/base' as *;
+
 .card::before {
     content: "";
     position: absolute;
