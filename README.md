@@ -31,7 +31,6 @@ Users should be able to:
 
 -   [GitHub repo](https://github.com/darryncodes/order-summary-component)
 -   [Solution URL](https://darryncodes.github.io/order-summary-component/)
--   [Live Site URL](https://www.darryncodes.co.uk/pages/order-summary-component.html)
 
 ## My process
 
